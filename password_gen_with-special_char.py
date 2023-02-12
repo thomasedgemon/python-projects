@@ -1,6 +1,7 @@
 
 import random
 import numpy as np
+import secrets
 
 #dataset to pull from: 36 characters
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -23,13 +24,13 @@ print("possible outcomes!")
 
 count = 0
 while count < desired_length:
-    random_integer = np.random.choice(first_choice)
+    random_integer = secrets.choice(first_choice)
     if random_integer == 0:
-        password.append(np.random.choice(alphabet))
+        password.append(secrets.choice(alphabet))
     elif random_integer == 1:
-        password.append(np.random.choice(numbers)) 
+        password.append(secrets.choice(numbers)) 
     elif random_integer == 2:
-        password.append(np.random.choice(special_characters))
+        password.append(secrets.choice(special_characters))
         
     count += 1
 
