@@ -1,4 +1,8 @@
 
+#time complexity of O(N^(1/2))
+#time-sensitive at 13 digits, time-intensive at 18 digits (approx 1.5 minutes)
+
+
 from math import isqrt
 def is_prime(n):
     number = ""
