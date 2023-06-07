@@ -1,0 +1,5 @@
+strictly for the purposes of this project-encrypting a string via SHA and AES with another string,
+it does not seem to make sense to use any random nonce, IV, salt, or pad, as running the same encryption
+function multiple times creates different final encryptions. given that i want to be able to encrypt the 
+string with the same master password at some unknown point in the future, i dont see how it could be done 
+using the aforementioned standard tools. 
